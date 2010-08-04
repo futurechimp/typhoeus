@@ -1,5 +1,8 @@
 module Typhoeus
   class Hydra
+
+    attr_accessor :stubs
+
     def initialize(options = {})
       @memoize_requests = true
       @multi       = Multi.new
@@ -240,3 +243,4 @@ module Typhoeus
     end
   end
 end
+
