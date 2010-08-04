@@ -1,6 +1,10 @@
 module Typhoeus
   class Hydra
 
+    # This accessor enables you to clear Hydra.stubs when necessary for testing
+    # the singleton Hydra.  Typically this might be called in a teardown block
+    # in your test suite.
+    #
     attr_accessor :stubs
 
     def initialize(options = {})
